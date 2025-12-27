@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Add inside @layer utilities if you want, or just at the bottom */
+body {
+  background-color: #f8fafc; /* Very light gray/blue */
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #16a34a, #15803d);
+}
