@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const db = require('./db');
+const dashboardRoutes = require('./routes/dashboardRoutes');
 require('dotenv').config();
 
 const app = express();
@@ -29,6 +30,7 @@ db.connect()
 // ===========================================
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/listings', require('./routes/listings'));
+app.use('/api/dashboard', dashboardRoutes);
 // app.use('/api/stats', require('./routes/stats')); // Uncomment later
 
 // Test Route

@@ -7,7 +7,8 @@
     "dev": "nodemon server.js",
     "client": "npm run dev --prefix client",
     "dev:all": "concurrently \"npm run dev\" \"npm run client\"",
-    "server": "node server.js"
+    "server": "node server.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -18,8 +19,11 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
+    "express-validator": "^7.3.1",
     "jsonwebtoken": "^9.0.3",
-    "pg": "^8.16.3"
+    "pg": "^8.16.3",
+    "socket.io": "^4.8.3",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.23",
@@ -27,5 +31,13 @@
     "nodemon": "^3.1.11",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.18"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dharmi10/gear-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dharmi10/gear-guard/issues"
+  },
+  "homepage": "https://github.com/dharmi10/gear-guard#readme"
 }
